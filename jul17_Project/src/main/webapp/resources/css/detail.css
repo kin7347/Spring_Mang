@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+@import
+	url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap")
+	;
+
+h1 {
+	font-family: "Noto Sans KR", sans-serif;
+	padding: 5px 10px;
+	border-bottom: 1px solid #848484;
+	border-left: 8px solid #fb8c00;
+}
+
+.imgGif {
+	width: 100px;
+	height: 100px;
+}
+.imgDiv{
+	text-align: center;
+	
+}
+body {
+	font-family: "Noto Sans KR", sans-serif;
+}
+
+button {
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px
+		rgba(0, 0, 0, 0.06);
+	cursor: pointer;
+	transition: 0.5s;
+	background-color: #fb8c00;
+	color: white;
+}
+
+.detail-content {
+	margin: 0 auto;
+	width: 800px;
+	height: auto;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid red;
+}
+
+.title-bar {
+	width: 100%;
+	height: 50px;
+	background-color: #ACCCAC;
+}
+
+.title {
+	font-size: large;
+	margin-left: 5px;
+}
+
+.name-bar {
+	width: 100%;
+	border-bottom: 1px solid red;
+	background-color: #FCEC93;
+	height: 80px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.name, .like, .date, .ip {
+	width: 50%;
+	height: 25px;
+	float: left;
+}
+
+.name, .like {
+	border-bottom: 1px solid red;
+}
+
+.like, .ip {
+	text-align: right;
+}
+
+.content {
+	width: 100%;
+	min-height: 500px;
+	height: auto;
+}
+.topbtn{
+	margin-left: 620px;
+	
+}
+.boardbtn {
+	margin-bottom: 5px;
+	font-family: "Noto Sans KR", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	width: auto;
+	border: none;
+	border-radius: 4px;
+}
+.cbtn {
+	margin-bottom: 5px;
+	font-family: "Noto Sans KR", sans-serif;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border: none;
+	border-radius: 4px;
+}
+#comment {
+	width : 100%;
+	margin-top : 5px;
+	font-family: "Noto Sans KR", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border: none;
+	border-radius: 4px;
+}
+
+.icon {
+	width: 18px;
+	height: 18px;
+}
+
+.like {
+	
+}
+button:hover {
+	background-color: red;
+}
+.copyright-wrap{
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 15px;
+    margin-top : 30px;
+
+}
+
+footer .copyright-wrap span img{
+	width: 59px;
+	
+	height: 11px;
+}
+footer .copyright-wrap span{
+	font-size: 13px;
+	line-height: 15px;
+}
+.commentBody{
+	margin: 0 100px 9px 0;
+	font-size : 14px;
+	line-height: 1.43;
+	color: #42454c;
+	word-break: break-all;
+    position: relative;
+    border: 1px solid #ececec;
+    border-radius: 1.4em;
+    padding: 1.0em;
+    box-shadow: 2px 5px 8px 0px #e7e7e794;
+    background-color: white;
+
+}
+.commentBody : after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 0.625em solid transparent;
+	border-left-color: #ececec;
+	border-right: 0;
+	border-top: 0;
+	margin-top: -0.312em;
+	margin-left: -0.625em;
+	}
+.cname{
+	
+}	
+.cdate{
+	font-size:13px;
+	color:#999999;
+}	
+.cgoimg{
+	width: 100px;
+	height: 100px;
+	
+}
+.openComment{
+	cursor: pointer;
+	width : 95px;
+}
+.cgo{
+    font-size:15px;
+	color:gray;
+	margin : -100px;
+}
+
+.box {
+	
+}
+.commentbox label {
+	display:block; 
+	position:relative; 
+	height:38px; 
+	border-bottom:1px solid #ccc;}
+.commentbox input[type="text"] {
+	padding:0 10px; 
+	width:758px; 
+	height:38px; 
+	font-size:16px; 
+	border:0;}
+.commentbox label i {
+	position:absolute; 
+	left:50%; 
+	right:50%; 
+	bottom:-1px; 
+	border-bottom:2px solid #fb8c00; 
+	transition:all .3s;}
+.commentbox label input[type="text"]:focus + i {
+	left:0; 
+	right:0; 
+	transition:all .3s;}	
+	

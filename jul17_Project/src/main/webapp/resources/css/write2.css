@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@import
+	url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap")
+	;
+
+h1 {
+	font-family: "Noto Sans KR", sans-serif;
+	padding: 5px 10px;
+	border-bottom: 1px solid #848484;
+	border-left: 8px solid #fb8c00;
+}
+
+.write-div {
+	margin: 0 auto;
+	width: 800px;
+	height: auto;
+	background-color: #fb8c00;
+	padding: 10px;
+}
+
+.write-div input {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 30px;
+}
+
+.write-div textarea {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	margin: 5px 0px;
+}
+
+.btn100 {
+	width: 220px;
+	margin-left: 280px;
+	padding: 0;
+	height: 35px;
+	font-family: "Noto Sans KR", sans-serif;
+	text-decoration: none;
+	display: inline-block;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px
+		rgba(0, 0, 0, 0.06);
+	cursor: pointer;
+	margin-top: -10px;
+}
+
+.btn100:hover {
+	background-color: #FCEC93;
+	color: red;
+	font-weight: bold;
+}
+
+.copyright-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 15px;
+	margin-top: 30px;
+}
+
+footer .copyright-wrap span img {
+	width: 59px;
+	height: 11px;
+}
+
+footer .copyright-wrap span {
+	font-size: 13px;
+	line-height: 15px;
+}

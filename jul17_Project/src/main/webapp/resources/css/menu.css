@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+@import
+	url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap")
+	;
+
+boby {
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	/*  position: fixed; */
+	/*    top: 0;
+   width: 100%; */
+	font-family: "Noto Sans KR", sans-serif;
+	height: 50px;
+	background-color: #fb8c00;
+	color: white;
+	margin-left: -8px;
+	margin-top: -8px;
+	cursor: pointer;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	list-style: none; /* li앞에 원을 없애줍니다. */
+	float: left;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+
+nav li:hover {
+	transiton: 0.5s;
+	background-color: #FCEC93;
+	color: red;
+	font-weight: bold;
+}
+
+.hi_login {
+	font-family: "Noto Sans KR", sans-serif;
+	font-size: 15px;
+	text-align: right;
+}
