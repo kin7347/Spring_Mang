@@ -75,6 +75,7 @@ public class ResttController {
 	@PostMapping("/cdelR")
 	public String cdelR(@RequestParam Map<String, Object>map, HttpSession session) {
 		int result = 0;
+		JSONObject json = new JSONObject();
 		//로그인여부 검사
 		if(session.getAttribute("mid") != null) {
 		//값 들어왔는지 여부 검사
@@ -82,14 +83,16 @@ public class ResttController {
 			 !(map.get("bno").equals(""))&& !(map.get("cno").equals(""))&&
 			 util.isNum(map.get("bno"))&& util.isNum(map.get("cno"))) {
 
-				System.out.println(map);	
-				
+				//System.out.println(map);	
 				map.put("mid", session.getAttribute("mid"));
+				
 				result = boardService.cdel(map);
-				System.out.println("삭제 결과 : " + result);
+				json.put("result", result);
+				
+				//System.out.println("삭제 결과 : " + result);
 			}
 		}
-		return result+"";
+		return json.toString();
 	}
 	
 	
